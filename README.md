@@ -22,7 +22,7 @@ Although not strictly necessary this is a recommended tree structure to get thin
     ├── iso
     │   └── Rocky-9.4-x86_64-dvd.iso
     ├── output
-    │   └── Rocky94FT.box
+    │   └── Rocky94.box
     ├── rocky94.pkr.hcl
     └── scripts
         ├── cleanup.sh
@@ -33,11 +33,15 @@ Unless you have a very fast Internet link I would suggest the Rocky Linux ISO is
 
 ## Post Install Scripts
 
-  - **ks-rocky94.cfg** - This is the kickstart file for the Vm build
+  - **ks-rocky94.cfg** - This is the kickstart file for the VM build
   - **rocky94.pkr.hcl** - This is the main packer file
   - **cleanup.sh** - Cleanup script after the VM has been created
   - **vagrant.sh** - Setup the vagrant user
   - **virtualbox.sh** - Mount the VBoxGuestAdditions.iso
+
+## Output
+
+Once the packer build is complete the Vagrant box file will be saved to the **output** directory.
 
 ## Usage
 
@@ -45,6 +49,12 @@ Make sure all the required software (listed above) is installed, then cd into on
 
     $ packer build -force -timestamp-ui rocky94.pkr.hcl
 
+## Adding the Vagrant box file
+
+You will need to add the box file to the Vagrant system before you can use it with Vagrant. Do the following:
+
+    $ cd output
+    $ vagrant box add Rocky94 Rocky94.box
 
 ## License
 
