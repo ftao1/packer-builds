@@ -1,0 +1,7 @@
+*.iso
+*.log
+*.box
+*.lock
+.gitignore
+*.????????
+CLAUDE.md
