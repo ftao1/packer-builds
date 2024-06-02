@@ -66,7 +66,7 @@ source "virtualbox-iso" "rocky" {
     ["modifyvm", "{{ .Name }}", "--hostonlyadapter2", "vboxnet1"]
     ["modifyvm", "{{ .Name }}", "--clipboard", "bidirectional"]
   ]
-  vm_name          = "Rocky94FT"
+  vm_name          = "Rocky94"
 }
 
 # BUILD BLOCK
@@ -85,7 +85,7 @@ build {
 
   post-processor "vagrant" {
     compression_level = 9
-    output            = "output/Rocky94FT.box"
+    output            = "output/Rocky94.box"
   }
 }
 
