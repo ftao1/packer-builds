@@ -14,18 +14,7 @@ find /var/log -type f | while read f; do echo -ne '' > $f; done;
 # remove under tmp directory
 rm -rf /tmp/*
 
-# remove interface persistent
-#rm -f /etc/udev/rules.d/70-persistent-net.rules
-
-#for ifcfg in $(ls /etc/sysconfig/network-scripts/ifcfg-*)
-#do
-#    if [ "$(basename ${ifcfg})" != "ifcfg-lo" ]
-#    then
-#        sed -i '/^UUID/d'   /etc/sysconfig/network-scripts/ifcfg-enp0s3
-#        sed -i '/^HWADDR/d' /etc/sysconfig/network-scripts/ifcfg-enp0s3
-#    fi
-#done
-
+# zero out empty space
 dd if=/dev/zero of=/EMPTY bs=1M
 rm -rf /EMPTY
 

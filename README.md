@@ -15,7 +15,6 @@ The following software must be installed/present on your local machine before yo
 Although not strictly necessary this is a recommended tree structure to get things going:
 
 ```bash
-.
 ├── README.md
 └── rocky94
     ├── http
@@ -31,6 +30,12 @@ Although not strictly necessary this is a recommended tree structure to get thin
         └── virtualbox.sh
 ```
 Unless you have a very fast Internet link I would suggest the Rocky Linux ISO is pre-downloaded prior to running.
+
+  - ks-rocky94.cfg - This is the kickstart file for the Vm build
+  - rocky94.pkr.hcl - This is the main packer file
+  - cleanup.sh - Cleanup script after the VM has been created
+  - vagrant.sh - Setup the vagrant user
+  - virtualbox.sh - Mount the VBoxGuestAdditions.iso
 
 ## Usage
 
