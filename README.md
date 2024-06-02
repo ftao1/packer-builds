@@ -31,11 +31,13 @@ Although not strictly necessary this is a recommended tree structure to get thin
 ```
 Unless you have a very fast Internet link I would suggest the Rocky Linux ISO is pre-downloaded prior to running.
 
-  - ks-rocky94.cfg - This is the kickstart file for the Vm build
-  - rocky94.pkr.hcl - This is the main packer file
-  - cleanup.sh - Cleanup script after the VM has been created
-  - vagrant.sh - Setup the vagrant user
-  - virtualbox.sh - Mount the VBoxGuestAdditions.iso
+## Post Install Scripts
+
+  - ***__ks-rocky94.cfg__*************************** - This is the kickstart file for the Vm build
+  - **___rocky94.pkr.hcl___ - This is the main packer file
+  - ___cleanup.sh___ - Cleanup script after the VM has been created
+  - ___vagrant.sh___ - Setup the vagrant user
+  - __virtualbox.sh__ - Mount the VBoxGuestAdditions.iso
 
 ## Usage
 
