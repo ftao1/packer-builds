@@ -5,7 +5,7 @@ This is a Packer project to build Rocky Linux 9.4 Vagrant box on VirtualBox.
 
 ## Requirements
 
-The following software must be installed/present on your local machine before you can use Packer to build any of these Vagrant boxes:
+The following software must be installed on your local machine before you can use Packer to build any of these Vagrant boxes:
 
   - [Packer](http://www.packer.io/)
   - [Vagrant](http://vagrantup.com/)
@@ -45,7 +45,7 @@ Once the packer build is complete the Vagrant box file will be saved to the **ou
 
 ## Usage
 
-Make sure all the required software (listed above) is installed, then cd into one of the box directories and run:
+Make sure all the required software (listed above) is installed, then cd into the **rocky94** directory and run:
 
     $ packer build -force -timestamp-ui rocky94.pkr.hcl
 
