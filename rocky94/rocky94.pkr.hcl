@@ -9,7 +9,7 @@
 # export PACKER_LOG=1
 #
 # Envoke the build with timestamps. tail -f the packerlog.txt
-# packer build -force -timestamp-ui rocky94FT.pkr.hcl
+# packer build -force -timestamp-ui rocky94.pkr.hcl
 
 packer {
   required_plugins {
@@ -63,7 +63,7 @@ source "virtualbox-iso" "rocky" {
     ["modifyvm", "{{ .Name }}", "--graphicscontroller", "vmsvga"],
     ["modifyvm", "{{ .Name }}", "--nat-localhostreachable1", "on"],
     ["modifyvm", "{{ .Name }}", "--nic2", "hostonly"],
-    ["modifyvm", "{{ .Name }}", "--hostonlyadapter2", "vboxnet1"]
+    ["modifyvm", "{{ .Name }}", "--hostonlyadapter2", "vboxnet0"],
     ["modifyvm", "{{ .Name }}", "--clipboard", "bidirectional"]
   ]
   vm_name          = "Rocky94"

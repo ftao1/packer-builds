@@ -2,10 +2,13 @@
 
 This is a Packer project to build Rocky Linux 9.4 Vagrant box on VirtualBox.
 
+## Assumptions
+
+This project assumes no existing installed software (listed below) and everything will be created from scratch.
 
 ## Requirements
 
-The following software must be installed on your local machine before you can use Packer to build any of these Vagrant boxes:
+The following software must be installed on your local machine before you can use Packer to build this Vagrant box:
 
   - [Packer](http://www.packer.io/)
   - [Vagrant](http://vagrantup.com/)
@@ -30,6 +33,12 @@ Although not strictly necessary this is a recommended tree structure to get thin
         └── virtualbox.sh
 ```
 Unless you have a very fast Internet link I would suggest the Rocky Linux ISO is pre-downloaded prior to running.
+
+## VirtualBox homelab setup
+
+For the homelab setup on VirtualBox I recommend that a separate host-only network is setup so you can have a private network of VMs.
+You will need to create a new host-only network - vboxnet0 - and create the IP range the network will use such as 172.16.0.0/24.
+Also be sure to enable DHCP for the network to make things easy.
 
 ## Post Install Scripts
 
