@@ -75,4 +75,4 @@ MIT
 
 ## Author
 
-These configurations are maintained by Fai Tao.
+These configurations are maintained by F.Tao.
