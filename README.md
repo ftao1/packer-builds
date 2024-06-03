@@ -39,6 +39,7 @@ Unless you have a very fast Internet link I would suggest the Rocky Linux ISO is
 For the homelab setup on VirtualBox I recommend that a separate host-only network is setup so you can have a private network of VMs.
 You will need to create a new host-only network - vboxnet0 - and create the IP range the network will use such as 172.16.0.0/24.
 Also be sure to enable DHCP for the network to make things easy.
+![Screenshot](./assets/vbox.jpg)
 
 ## Post Install Scripts
 
