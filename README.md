@@ -34,8 +34,8 @@ Although not strictly necessary this is a recommended tree structure to get thin
         ├── vagrant.sh
         └── virtualbox.sh
 ```
-### Unless you have a very fast Internet link I would suggest the Rocky Linux ISO is pre-downloaded prior to running.
-### The Jenkinsfile is optional in case you need to add this to a pipeline
+Unless you have a very fast Internet link I would suggest the Rocky Linux ISO is pre-downloaded prior to running.
+The Jenkinsfile is optional in case you need to add this to a pipeline.
 
 ## VirtualBox homelab setup
 
