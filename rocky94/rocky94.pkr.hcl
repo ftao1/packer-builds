@@ -36,7 +36,15 @@ variable "disk_size" {
   default = "40960"
 }
 
-variable "url" {
+variable "urls" {
+  type = list(string)
+  default = [
+    "iso/Rocky-9.4-x86_64-dvd.iso",
+    "https://mirrors.vinters.com/rocky/9.4/isos/x86_64/Rocky-9.4-x86_64-dvd.iso"
+    ]
+}
+
+variable "iso_path" {
   type = string
   default = "iso/Rocky-9.4-x86_64-dvd.iso"
 }
@@ -51,7 +59,8 @@ source "virtualbox-iso" "rocky" {
   headless         = "true"
   http_directory   = "http"
   iso_checksum     = var.iso_checksum
-  iso_url          = var.url
+  iso_urls         = var.urls
+  iso_target_path  = var.iso_path
   shutdown_command = "echo 'vagrant' | sudo -S /sbin/halt -h -p"
   ssh_password     = "vagrant"
   ssh_timeout      = "50000s"
