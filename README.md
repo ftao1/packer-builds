@@ -14,11 +14,13 @@ The following software must be installed on your local machine before you can us
   - [Vagrant](http://vagrantup.com/)
   - [VirtualBox](https://www.virtualbox.org/)
   - [Rocky Linux](https://rockylinux.org/)
+  - [Jenkins](https://www.jenkins.io/) **OPTIONAL**
 
 Although not strictly necessary this is a recommended tree structure to get things going:
 
 ```bash
 ├── README.md
+├── Jenkinsfile
 └── rocky94
     ├── http
     │   └── ks-rocky94.cfg
@@ -32,7 +34,8 @@ Although not strictly necessary this is a recommended tree structure to get thin
         ├── vagrant.sh
         └── virtualbox.sh
 ```
-Unless you have a very fast Internet link I would suggest the Rocky Linux ISO is pre-downloaded prior to running.
+### Unless you have a very fast Internet link I would suggest the Rocky Linux ISO is pre-downloaded prior to running.
+### The Jenkinsfile is optional in case you need to add this to a pipeline
 
 ## VirtualBox homelab setup
 
