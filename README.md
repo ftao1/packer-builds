@@ -1,6 +1,6 @@
 # HashiCorp Packer Builds for Rocky Linux
 
-This is a Packer project to build Rocky Linux 9.4 Vagrant box on VirtualBox.
+This is a Packer project to build Rocky Linux 9.4 Vagrant box on VirtualBox and uses Jenkins.
 
 ## Assumptions
 
