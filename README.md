@@ -62,11 +62,14 @@ Clone the repo and checkout the jenkins branch:
     $ cd packer_builds
     $ git checkout jenkins
 
+In the Jenkins webUI click *Build Now* button.
+
 The Jenkinsfile will create these directories:
 
    - /vagrant_boxes
    - /ISO
 
+After the pipeline completes, the vagrant box is saved in */vagrant_boxes* and *vagrant box add* is automatically run to add the vagrant box in the environment.
 
 ## License
 
