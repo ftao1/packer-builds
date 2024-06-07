@@ -5,6 +5,7 @@ This is a Packer project to build Rocky Linux 9.4 Vagrant box on VirtualBox usin
 ## Assumptions
 
 This project assumes no existing installed software (listed below) and everything will be created from scratch.
+Jenkins should also be installed and configured on the same server to make things as simple as possible.
 A Jenkins pipeline should aready be set up to run the Jenkinsfile.
 
 ## Requirements
@@ -31,8 +32,6 @@ Although not strictly necessary this is a recommended tree structure to get thin
         ├── vagrant.sh
         └── virtualbox.sh
 ```
-Jenkins should also be installed and configured on the same server to make things as simple as possible.
-Jenkins usage is beyond the scope of this project.
 
 ## VirtualBox homelab setup
 
