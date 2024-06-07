@@ -74,7 +74,7 @@ pipeline {
 
                     // Use sudo to switch to the initiating user and add the Vagrant box
                     sh """
-                    sudo -u ${userId} vagrant box add ${boxPath} --name ${boxName}
+                    sudo -u ${userId} vagrant box add -f ${boxPath} --name ${boxName}
                     """
                 }
             }
