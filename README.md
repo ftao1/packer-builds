@@ -4,7 +4,7 @@ This is a Packer project to build Rocky Linux 9.4 Vagrant box on VirtualBox and 
 
 ## Assumptions
 
-This project assumes no existing installed software (listed below) and everything will be created from scratch.
+This project assumes no existing installed software (listed below) and everything will be created from scratch. A Jenkins pipeline should aready be set up.
 
 ## Requirements
 
@@ -24,10 +24,6 @@ Although not strictly necessary this is a recommended tree structure to get thin
 └── rocky94
     ├── http
     │   └── ks-rocky94.cfg
-    ├── iso
-    │   └── Rocky-9.4-x86_64-dvd.iso
-    ├── output
-    │   └── Rocky94.box
     ├── rocky94.pkr.hcl
     └── scripts
         ├── cleanup.sh
@@ -35,7 +31,7 @@ Although not strictly necessary this is a recommended tree structure to get thin
         └── virtualbox.sh
 ```
 Unless you have a very fast Internet link I would suggest the Rocky Linux ISO is pre-downloaded prior to running.
-The Jenkinsfile is optional in case you need to add this to a pipeline.
+The Jenkinsfile will need to be added and configured in your pipeline.
 
 ## VirtualBox homelab setup
 
@@ -57,7 +53,7 @@ Also be sure to enable DHCP for the network to make things easy.
 
 ## Output
 
-Once the packer build is complete the Vagrant box file will be saved to the **output** directory.
+Once the packer build is complete the Vagrant box file will be saved to the /vagrant_boxes** directory.
 
 ## Usage
 

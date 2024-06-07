@@ -39,14 +39,14 @@ variable "disk_size" {
 variable "urls" {
   type = list(string)
   default = [
-    "iso/Rocky-9.4-x86_64-dvd.iso",
+    "/ISO/Rocky-9.4-x86_64-dvd.iso",
     "https://mirrors.vinters.com/rocky/9.4/isos/x86_64/Rocky-9.4-x86_64-dvd.iso"
     ]
 }
 
 variable "iso_path" {
   type = string
-  default = "iso/Rocky-9.4-x86_64-dvd.iso"
+  default = "/ISO/Rocky-9.4-x86_64-dvd.iso"
 }
 
 # SOURCE BLOCK
