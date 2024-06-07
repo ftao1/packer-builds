@@ -31,6 +31,8 @@ Although not strictly necessary this is a recommended tree structure to get thin
         ├── vagrant.sh
         └── virtualbox.sh
 ```
+Jenkins should also be installed and configured on the same server to make things as simple as possible.
+Jenkins usage is beyond the scope of this project.
 
 ## VirtualBox homelab setup
 
