@@ -1,10 +1,11 @@
-# HashiCorp Packer Builds for Rocky Linux
+# HashiCorp Packer Builds for Rocky Linux with Jenkins
 
-This is a Packer project to build Rocky Linux 9.4 Vagrant box on VirtualBox and uses Jenkins.
+This is a Packer project to build Rocky Linux 9.4 Vagrant box on VirtualBox using Jenkins.
 
 ## Assumptions
 
-This project assumes no existing installed software (listed below) and everything will be created from scratch. A Jenkins pipeline should aready be set up.
+This project assumes no existing installed software (listed below) and everything will be created from scratch.
+A Jenkins pipeline should aready be set up to run the Jenkinsfile.
 
 ## Requirements
 
@@ -14,7 +15,7 @@ The following software must be installed on your local machine before you can us
   - [Vagrant](http://vagrantup.com/)
   - [VirtualBox](https://www.virtualbox.org/)
   - [Rocky Linux](https://rockylinux.org/)
-  - [Jenkins](https://www.jenkins.io/) **OPTIONAL**
+  - [Jenkins](https://www.jenkins.io/)
 
 Although not strictly necessary this is a recommended tree structure to get things going:
 
@@ -30,8 +31,6 @@ Although not strictly necessary this is a recommended tree structure to get thin
         ├── vagrant.sh
         └── virtualbox.sh
 ```
-Unless you have a very fast Internet link I would suggest the Rocky Linux ISO is pre-downloaded prior to running.
-The Jenkinsfile will need to be added and configured in your pipeline.
 
 ## VirtualBox homelab setup
 
@@ -57,16 +56,17 @@ Once the packer build is complete the Vagrant box file will be saved to the /vag
 
 ## Usage
 
-Make sure all the required software (listed above) is installed, then cd into the **rocky94** directory and run:
+Clone the repo and checkout the jenkins branch:
 
-    $ packer build -force -timestamp-ui rocky94.pkr.hcl
+    $ git clone https://github.com/ftao1/packer_builds.git
+    $ cd packer_builds
+    $ git checkout jenkins
 
-## Adding the Vagrant box file
+The Jenkinsfile will create these directories:
 
-You will need to add the box file to the Vagrant system before you can use it with Vagrant. Do the following:
+   - /vagrant_boxes
+   - /ISO
 
-    $ cd output
-    $ vagrant box add Rocky94 Rocky94.box
 
 ## License
 
