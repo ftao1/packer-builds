@@ -94,7 +94,7 @@ build {
 
   post-processor "vagrant" {
     compression_level = 9
-    output            = "output/Rocky94.box"
+    output            = "/vagrant_boxes/Rocky94.box"
   }
 }
 
