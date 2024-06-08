@@ -53,7 +53,7 @@ Also be sure to enable DHCP for the network to make things easy.
 
 ## Output
 
-Once the packer build is complete the Vagrant box file will be saved to the /vagrant_boxes** directory.
+Once the packer build is complete the Vagrant box file will be saved to the **/vagrant_boxes** directory.
 
 ## Usage
 
