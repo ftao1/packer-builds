@@ -59,8 +59,8 @@ Once the packer build is complete the Vagrant box file will be saved to the **/v
 
 Clone the repo and checkout the jenkins branch:
 
-    $ git clone https://github.com/ftao1/packer_builds.git
-    $ cd packer_builds
+    $ git clone https://github.com/ftao1/packer-builds.git
+    $ cd packer-builds
     $ git checkout jenkins
 
 In the Jenkins webUI click **Build Now** button.
