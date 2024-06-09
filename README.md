@@ -71,7 +71,7 @@ The Jenkinsfile will create these directories:
    - **/ISO**
 
 After the pipeline completes, the vagrant box is saved in **/vagrant_boxes** and **vagrant box add** is automatically run to add the vagrant box in the environment.
-ISO's that are downloaded are saved in /ISO and cached.
+ISO's that are downloaded are saved in **/ISO** and cached.
 
 ## License
 
