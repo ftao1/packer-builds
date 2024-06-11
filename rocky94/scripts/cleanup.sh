@@ -18,5 +18,3 @@ rm -rf /tmp/*
 dd if=/dev/zero of=/EMPTY bs=1M
 rm -rf /EMPTY
 
-# Remove any lock files left in iso dir
-rm -rf ~/packer_builds/rocky94/iso/*.lock
