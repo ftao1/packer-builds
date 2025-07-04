@@ -58,7 +58,7 @@ Once the packer build is complete the Vagrant box file will be saved to the **ou
 
 ## Usage
 
-Make sure all the required software (listed above) is installed, then cd into the **rocky94** directory.
+Make sure all the required software (listed above) is installed, then cd into the **rocky96** directory.
 
 ### Option 1: Automatic Build and Add (Recommended)
 
